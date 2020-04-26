@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.SliderEx02">
+    <ContentPage.Content>
+
+        <StackLayout BindingContext="{x:Reference sli}"
+                     BackgroundColor="Aqua">
+
+
+            <!--
+            <Label Text="{Binding Source={x:Reference sli},Path=Value,StringFormat = ' Value is {0:F2}'}"
+                   x:Name="lbl"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="{Binding Source={x:Reference sli}, Path=Value}"
+                   Opacity="{Binding Source={x:Reference sli}, Path=Value}"
+                   /> -->
+
+
+            <!-- By default Minimum value is 0 and Maximum is 1, if you want to change minumum value
+            more than 0 You must need to assign maximum first and give minimum otherwise you get an exception-->
+
+            <!-- Instead of source reference for each property we can use BindingContext at the control level -->
+
+            <Label Text="Binding Examples" FontAttributes="Bold"
+                   Rotation="{Binding Value}"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+
+            <Label 
+                   Text="{Binding Value,StringFormat = ' Value is {0:F0}'}"
+                   x:Name="lbl"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   Opacity="{Binding Value}"
+                   >
+                  <!-- FontSize="{Binding Value}" -->
+                   
+                </Label>
+            <BoxView WidthRequest="200" HeightRequest="100" Color="Coral"
+                     Opacity="{Binding Value}"></BoxView>
+            <!--
+            <BoxView WidthRequest="200" HeightRequest="100" Color="Coral"
+                     Opacity="{Binding Source={x:Reference sli}, Path=Value}"></BoxView>
+            -->
+            <Slider
+                x:Name="sli"
+               Maximum="180"
+                Minimum="0">
+               <!-- ValueC1hanged="sli_ValueChanged" THis is the event of the slider-->                                          
+
+            </Slider>
+            <!-- if you use Binding Context at the level layout then all the control in the layout can directly use
+            Binding value without giving source exlicity for example see below where wa the binding on the box view-->
+
+            <!-- ValueChanged Event was Generated in place of binding, If you use Binding you don't need Event handler-->
+            <!-- Binding is a control that connect an object like a lable to the slider control
+            so when you use that, you will not need the code behind
+            note most time path = value, sometimes with switch use toggle-->
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

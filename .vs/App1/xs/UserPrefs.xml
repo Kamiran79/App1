@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{31F2EE71-9DD1-41E3-BA8B-7965B7D01997}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App1/Views/PopupEx.xaml.cs">
+    <Files>
+      <File FileName="App1/Views/SliderEx02.xaml" Line="61" Column="23" />
+      <File FileName="App1/Views/SliderEx02.xaml.cs" />
+      <File FileName="App1/Views/Carouselex.xaml" />
+      <File FileName="App1/Views/CarouselExx.xaml" />
+      <File FileName="App1/Views/CarouselExx.xaml.cs" />
+      <File FileName="App1/App.xaml" />
+      <File FileName="App1/Views/PopupEx.xaml" />
+      <File FileName="App1/Views/PopupEx.xaml.cs" Line="30" Column="15" />
+      <File FileName="App1/App.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="App1" expanded="True">
+            <Node name="App1" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="CarouselExx.xaml" expanded="True" />
+                <Node name="PopupEx.xaml" expanded="True">
+                  <Node name="PopupEx.xaml.cs" selected="True" />
+                </Node>
+                <Node name="SliderEx02.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="App1.Android" expanded="True">
+              <Node name="drawble" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.App1.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.App1.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.App1.UITests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
